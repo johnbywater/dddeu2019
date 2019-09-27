@@ -1,6 +1,8 @@
-# Events in Software, Process, and Reality
+_This is the transcript of a talk given at DDD Europe conference in Amsterdam, January 2019.
 
-_This is the transcript of a talk given at DDD Europe conference in Amsterdam, January 2019. [(Video of the talk is available on YouTube.)](https://www.youtube.com/watch?v=EX_zRTeowuM)_
+[The video of the talk is available on YouTube.](https://www.youtube.com/watch?v=EX_zRTeowuM)_
+
+# Events in Software, Process, and Reality
 
 This is an experimental talk. My slightly random starting point for my talk today is something Eric Evans said in the keynote he gave at this conference last year, in which he discussed modelling time. He asked the very interesting question, "What if we didn't have instants?"
 
