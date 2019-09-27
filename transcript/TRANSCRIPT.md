@@ -7,7 +7,7 @@ I’m going to talk about events, warming up with some hopefully obvious stuff, 
 
 Firstly, let’s see what the dictionary says about events…
 
-> "An event is something that happens. You can use events to describe all the things that are happening in a particular situation."
+> An event is something that happens. You can use events to describe all the things that are happening in a particular situation. — Collins Dictionary
 
 Let’s get started by thinking about events in software. Perhaps it’s a file on a computer. But even if it’s printed on paper, it’s a fact of at least one episode or occasion of software development, the process by which it was created. Hopefully, it’s also something that actually runs on a computer.
 
@@ -19,23 +19,23 @@ If we don’t code explicitly for events — for “what happened” — then we
 
 ![commit after](./images/commit-after.png "commit after")
 
-> CRUD is the wrong approach for microservices. — James Roper, 2017
+> "CRUD is the wrong approach for microservices. — James Roper, 2017"
 
 ![publish after](./images/publish-after.png "publish after")
 
 On the persistence level, the records are effectively damaged. But on the level of the domain, what is is broken is the subsequent perception of “what happened” previously on the level of the domain: the perception is that something else happened. We can’t eliminate infrastructure failure, but we can eliminate misperceptions, so long as we can identify what’s actually happening in the processing. Just before we do that, let’s think about objects…
 
+## The actual entities
+
 Here’s Martin Fowler in 2002, in his book Patterns of Enterprise Application Architecture, which I really loved.
 
-> “To build a good domain model, you should have an understanding of conceptual thinking about objects”.
+> To build a good domain model, you should have an understanding of conceptual thinking about objects. — Martin Fowler, 2002
 
-So what does that actually mean? What does it mean to “have an understanding of conceptual thinking about objects?” I used to feel that I knew what he meant. Fowler mentioned that Eric Evans is writing a book.
-
-> “Eric Evans is currently writing a book…”
+So what does that actually mean? What does it mean to “have an understanding of conceptual thinking about objects?” I used to feel that I knew what he meant. Fowler also mentions that Eric Evans is writing a book.
 
 So let’s see what Eric Evans said about objects in 2003. Here’s Eric Evans discussing his use of pattern language in his great book Domain Driven Design. I also really loved this book. When it comes to understanding objects, he said,
 
-> To stop with ‘Everything is an object’ would be like a carpenter or an architect summing up houses by saying, ‘Everything is a room.’ [...] There is a need to move beyond ‘Everything is an object’ to at least the equivalent of distinguishing bolts from springs.
+> To stop with ‘Everything is an object’ would be like a carpenter or an architect summing up houses by saying, ‘Everything is a room.’ [...] There is a need to move beyond ‘Everything is an object’ to at least the equivalent of distinguishing bolts from springs. — Eric Evans, 2003
 
 Bolts and springs. Are those the actual entities? I used to think so.
 
@@ -55,7 +55,7 @@ What’s the real difference?
 
 The trouble with objects seems to be, what Alfred North Whitehead called “the fallacy of misplaced concreteness”.
 
-> The current accounts of perception are the stronghold of modern meta-physical difficulties. They have their origin in the same misunderstanding which led to the incubus of the substance-quality categories. The Greeks looked at a stone, and perceived that it was grey.
+> The current accounts of perception are the stronghold of modern meta-physical difficulties. They have their origin in the same misunderstanding which led to the incubus of the substance-quality categories. The Greeks looked at a stone, and perceived that it was grey. — Alfred North Whitehead, 1929
 
 But of course, now, after so many event sourcing presentations that have included this picture, whereas the Greeks looked at stone and perceived that it was grey, we look at this stone and perceive event-sourcing.
 
@@ -72,9 +72,11 @@ The big question I had was how applicable event sourcing really was, if it is no
 
 So as Eric Evans said at the end of his talk last year:
  
-> Research the established formalisms.
+> Research the established formalisms. — Eric Evans, 2018
 
 And so, I looked again into process philosophy...
+
+## Process philosophy
 
 The basic idea of process philosophy seems to be that the future doesn’t exist. And also the past is dead. Process philosophy has a long tradition.
 
@@ -92,7 +94,9 @@ For Heraclitus, “everything flows”. But for modern philosophy, such absolute
 
 It happens that the Biblical phrase “come to pass” works well, since events don’t change, they just become and then perish.
 
-> Process is the becoming of experience.
+> Process is the becoming of experience. — Alfred North Whitehead, 1929
+
+## Alfred North Whitehead
 
 In 1929, aged 68 years old, Alfred North Whitehead published a book called Process and Reality.
 
@@ -103,8 +107,6 @@ As far as I can tell, there were eight contemporary book reviews of the 1929 edi
 Axton Clark in New York Times Book Review, January 5 1930, wrote: “Perhaps the situation can best be made clear by saying bluntly that [this work surpasses] Aristotle’s “Metaphysics” and Kant’s “Critique of Pure Reason” for intrinsic importance, though naturally not as yet for historical standing or influence.”
 
 Wieman wrote in his 1930 review: "Not many people will read Whitehead's recent book in this generation; not many will read it in any generation. But its influence will radiate through concentric circles of popularization until the common man will think and work in the light of it, not knowing whence the light came. After a few decades of discussion and analysis one will be able to understand it more readily than can now be done.”
-
-## Introduction to the man
 
 Whitehead was born in 1861, and died in 1947. It was said, he was a genial sort of person….
 
@@ -120,49 +122,18 @@ _Process and Reality_ is his masterpiece. Allegedly, we have the word “creativ
 
 We also get the notion of expression e.g. in DNA biology stuff from Whitehead, from his writing about the idea of reality creating reality, rather than nature somehow being created by a supernatural being in a process of creation.
 
-[In biology, Conrad Waddington had a strong interest in Whitehead’s Process and Reality, and in the 1930s laid the
+In biology, Conrad Waddington had a strong interest in Whitehead’s Process and Reality, and in the 1930s laid the
  foundations for developmental biology, which is the study of the process by which animals and plants grow and
-  develop. Brian Goodwin was one of Waddington’s students, and continued this work, writing about how cells control themselves.]
- 
+  develop. Brian Goodwin was one of Waddington’s students, and continued this work, writing about how cells control themselves.
 
-[Whitehead had a son who was killed in the First World War.]
+It was Kurt Gödel's encounter’s with Whitehead and Russell’s work when Gödel declared that “counting works” (if there’s a difference between the theory and counting, then we know the theory is wrong because counting works).
 
-[In 1968, Giles Deleuze wrote in Difference and Repetition that Whitehead’s Process and Reality is “one of the
- greatest books of modern philosophy.”]
-
-[It was Goedel encounter’s with Whitehead and Russell’s work when Goedel declared that “counting works” (if there’s
- a difference between the theory and counting, then we know the theory is wrong because counting works).]
-
-
-[Whitehead was a contemporary of Einstein, and went to some of the same parties. Apparently Whitehead and Einstein
- met at least once. Whitehead tried to explain Process and Reality to Einstein, who allegedly didn’t understand what
-  Whitehead was talking about.]
-
-[Another person who met and discussed with Einstein was Carnap, who wrote in his auto-biography: “Once Einstein said
- that the problem of the Now worried him seriously. He explained that the experience of the Now means something
-  special for man, something essentially different from the past and the future, but that this important difference does not and cannot occur within physics. That this experience cannot be grasped by science seemed to him a matter of painful but inevitable resignation. I remarked that all that occurs objectively can be described in science; on the one hand the temporal sequence of events is described in physics; and, on the other hand, the peculiarities of man’s experiences with respect to time, including his different attitude towards past, present, and future, can be described and (in principle) explained in psychology. But Einstein thought that these scientific descriptions cannot possibly satisfy our human needs; that there is something essential about the Now which is just outside the realm of science. We both agreed that this was not a question of a defect for which science could be blamed, as Bergson thought. I did not wish to press the point, because I wanted primarily to understand his personal attitude to the problem rather than to clarify the theoretical situation. But I definitely had the impression that Einstein’s thinking on this point involved a lack of distinction between experience and knowledge.”]
-
-[Whitehead’s work isn’t detached from science, and doesn’t somehow conflict with mathematics. Minkowski It seems to
- work quite well with quantum fields. There are quite a few living scientists arguing along the following lines
- , articulated by Henry Folse in 2004: “Many philosophers and physicists—including the current reviewer—have argued that Whitehead's process philosophy provides a conceptual framework better suited for understanding the quantum theoretical account of the atomic domain than does the substance ontology that has dominated Western metaphysics.”]
-
-
-[Actually, to digress a little, after spending some time reading Whitehead and thinking about software, I was
- beginning to worry about how it all relates to design patterns. It seemed like a bad case of multiple inheritance - how does something that originates in the design of physical space fit with the proposition that everything is an event? I really didn’t know what to think. But then it occurred to me to see if pattern language isn’t in fact more or less a creative application of Whitehead’s theory. That’s obviously putting it too simply, but it turns out that it is, and so there is absolutely nothing to resolve. So a bit later in this talk, I’ll say a few things about pattern language, in order to illustrate Whitehead’s ideas, and also how Whitehead has illuminated our work, as predicted by the book reviewer.]
-
-[Whitehead actually says quite a lot about patterns. He refers to: the qualitative pattern; the pattern of intensive
- quality; pattern in the objective datum; and emotional sensory pattern.]
-
-[(These distinctions also seem to be the distinction in pattern languages such as Domain Driven Design: the pattern
- as a whole, the pattern as a network of centres, the physical implementation of the pattern, and the way the
-  pattern feels).]
-  
 Process and Reality appears as a thoroughly competent reworking of the major “depositions” in the history of philosophy: to isolate things that work; and to compose those fragments into a coherent scheme of ideas.
 
 In Process and Reality, amongst other things, Whitehead rejects the Cartesian idea that reality is fundamentally
  constructed of bits of matter that exist totally independently of one another, in favour of an event-based or "process" ontology in which events are primary and are fundamentally interrelated and dependent on one another:
 
-> ‘Actual entities’ — also termed ‘actual occasions’ — are the final real things of which the world is made up. There is no going behind actual entities to find anything more real. They differ among themselves: God is an actual entity, and so is the most trivial puff of existence in far-off empty space. But, though there are gradations of importance, and diversities of function, yet in the principles which actuality exemplifies, all are on the same level. The final facts are, all alike, actual entities; and these actual entities are drops of experience, complex and interdependent.
+> ‘Actual entities’ — also termed ‘actual occasions’ — are the final real things of which the world is made up. There is no going behind actual entities to find anything more real. They differ among themselves: God is an actual entity, and so is the most trivial puff of existence in far-off empty space. But, though there are gradations of importance, and diversities of function, yet in the principles which actuality exemplifies, all are on the same level. The final facts are, all alike, actual entities; and these actual entities are drops of experience, complex and interdependent. — Alfred North Whitehead, 1929
 
 So this is what happens when you don’t have instants. If time is not a line that we’re sliding along, with the moment being a point on that line, infinitely divided into an infinity of infinitesimal present moment points in time.
 
@@ -174,7 +145,13 @@ We can picture eternity as a ball, surrounded by the void of the time to come, w
 
 Let’s remember this fire, and look again at some of what Christopher Alexander had to say, to see how Alexander’s work was illuminated by Whitehead’s work, so that we can see how Whitehead has illuminated our work.
 
-I was beginning to wonder what the connection was between pattern language and events, but it turns out that Whitehead had an enormous influence on Christopher Alexander. Whitehead actually says quite a lot both about patterns and about language in his book. Pattern language was popularised by the book A Pattern Language For Towns And Cities, which was published in 1977.
+## Pattern language
+
+I was beginning to wonder what the connection was between pattern language and events, but it turns out that Whitehead had an enormous influence on Christopher Alexander.
+
+Whitehead actually says quite a lot both about patterns and about language in his book. He refers to: the qualitative pattern; the pattern of intensive quality; pattern in the objective datum; and emotional sensory pattern. These distinctions also seem to be the distinction in pattern languages such as Domain Driven Design: the pattern as a whole, the pattern as a network of centres, the physical implementation of the pattern, and the way the pattern feels.
+
+Pattern language was popularised by the book A Pattern Language For Towns And Cities, which was published in 1977.
 
 In 1987, Kent Beck and Ward Cunningham began experimenting with the idea of applying patterns to programming. Ward Cunningham, wrote in a paper he co-authored with Michael Mehaffy, that wikis "were in fact developed as tools to facilitate efficient sharing and modifying of patterns.”
 
@@ -190,10 +167,9 @@ In 1979, Alexander published a book called _The Timeless Way of Building_, which
 
 > When a building has this fire, then it becomes a part of nature. Like ocean waves, or blades of grass, its parts are governed by the endless play of repetition and variety created in the presence of the fact that all things pass. This is the quality itself. — Christopher Alexander, 1979
 
-
 Like Whitehead, Alexander describes “becoming coherent” within “things that pass” that is the quality that makes those things alive.
 
-> The process of unfolding goes step by step, one pattern at a time. [...] Indeed, this subtle and complex freedom from inner contradictions is just the very quality which makes things alive. [...] At this final stage, the patterns are no longer important: the patterns have taught you to be receptive to what is real”
+> The process of unfolding goes step by step, one pattern at a time. [...] Indeed, this subtle and complex freedom from inner contradictions is just the very quality which makes things alive. [...] At this final stage, the patterns are no longer important: the patterns have taught you to be receptive to what is real.  — Christopher Alexander, 1979
 
 And by real he means things that pass (events).
 
@@ -217,8 +193,7 @@ Ward Cunningham authored a number of pattern languages, for example EPISODES pub
 
 EPISODES describes a method of software development. In this pattern language, everything is an event. The really remarkable fact about this text, the reason I included it in this talk, is the close resemblance to what Whitehead said about events. In particular, the four stages of an event, and the notion of becoming, are quite visible here.
 
-> We are particularly interested in the sequence of mental states that lead to important decisions. We call the sequence an episode. An episode builds toward a climax where the decision is made. Before the decision, we find facts, share opinions, build concentration and generally prepare for an event that cannot be known in advance. After the climax, the decision is known, but the episode continues. In the tail of an episode we act on our decision, promulgate it, follow it through to its consequences. We also leave a trace of the episode behind in its products. It is from this trace that we must often pick up the pieces of thought in some future episode.
-
+> We are particularly interested in the sequence of mental states that lead to important decisions. We call the sequence an episode. An episode builds toward a climax where the decision is made. Before the decision, we find facts, share opinions, build concentration and generally prepare for an event that cannot be known in advance. After the climax, the decision is known, but the episode continues. In the tail of an episode we act on our decision, promulgate it, follow it through to its consequences. We also leave a trace of the episode behind in its products. It is from this trace that we must often pick up the pieces of thought in some future episode.  — Ward Cunningham, 1995
 
 To what degree do other software development approaches apprehend that everything is an event? I’m not saying nothing can work unless propositions are expressed in terms of events.
 
@@ -236,13 +211,15 @@ If we just dwell on Scrum for a moment…
 
 > Prescribed events are used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum. All events are time-boxed events, such that every event has a maximum duration. Once a Sprint begins, its duration is fixed and cannot be shortened or lengthened. The remaining events may end whenever the purpose of the event is achieved, ensuring an appropriate amount of time is spent without allowing waste in the process.
 >
-> Other than the Sprint itself, which is a container for all other events, each event in Scrum is a formal opportunity to inspect and adapt something.
+> Other than the Sprint itself, which is a container for all other events, each event in Scrum is a formal opportunity to inspect and adapt something. — Scrum website
 
 I think it’s interesting that Scrum defines “Scrum Events”. Each event is associated with a particular kind of fact that is effectively the decision of the event. We also have the idea of events happening within events, and also of events happening after events. Since it seems so well defined, why is there so much trouble and strife about how it is actually used?
 
-> “Part of the big problem with the whole Scrum/Agile movement is you’ve got some great practices but you haven’t worked out the underlying theory yet, and until you work out the underlying theory it won’t scale and it won’t have bite, other than in isolated cases.” — Dave Snowden, 2011
+> Part of the big problem with the whole Scrum/Agile movement is you’ve got some great practices but you haven’t worked out the underlying theory yet, and until you work out the underlying theory it won’t scale and it won’t have bite, other than in isolated cases. — Dave Snowden, 2011
  
 So let’s see what else there is to know about Whitehead’s theory of events.
+
+## Process and Reality
 
 Let’s briefly look at the episode which gave us Process and Reality.
 
@@ -340,6 +317,8 @@ Whitehead writes: “This conception of an actual entity in the fluent world is 
 
 There’s one more thing I wanted to include here: Whitehead’s notion of function. Whitehead wrote, “To function is to contribute determination to the actual entities in the nexus of some actual world.” As Ward Cunningham wrote in Episodes, “Programming is the act of deciding now what will happen in the future.”
 
+## A few examples
+
 You can use the diagram to model anything by turning the different bits of text into questions.
 
 So what does Domain Driven Design look like as an event?
@@ -422,6 +401,8 @@ This really helps to keep focus on the domain driven design when developing a di
 I thought I should mention, there is working code for all of this in a project on GitHub, my library for event sourcing in Python. I don’t know how many people here use Python? In DDD terms, this is a “cohesive mechanism”. Eric Evans wrote,
 
 > Partition a conceptually COHESIVE MECHANISM into a separate lightweight framework. Particularly watch for formalisms for well-documented categories of algorithms. Expose the capabilities of the framework with an INTENTION-REVEALING INTERFACE. Now the other elements of the domain can focus on expressing the problem (‘what’), delegating the intricacies of the solution (‘how’) to the framework.
+
+## Conclusion
 
 To round off… As the dictionary said, we can use events to describe everything that happens in a domain. And now we know what an event actually is, we can see that every domain can be exhaustively described with events.
 
