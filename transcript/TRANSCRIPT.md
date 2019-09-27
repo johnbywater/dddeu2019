@@ -10,7 +10,7 @@ This is an experimental talk. My slightly random starting point for my talk toda
 
 I'm going to talk about events, warming up with some hopefully obvious stuff, working towards the concept of the event as an occasion of experience as proposed by Alfred North Whitehead. I will end with some examples.
 
-Firstly, let's see what the dictionary says about events…
+Firstly, let's see what the dictionary says about events...
 
 > An event is something that happens. You can use events to describe all the things that are happening in a particular situation. — Collins Dictionary
 
@@ -28,7 +28,7 @@ If we don't code explicitly for events — for "what happened" — then we can't
 
 ![publish after](./images/publish-after.png "publish after")
 
-On the persistence level, the records are effectively damaged. But on the level of the domain, what is is broken is the subsequent perception of "what happened" previously on the level of the domain: the perception is that something else happened. We can't eliminate infrastructure failure, but we can eliminate misperceptions, so long as we can identify what's actually happening in the processing. Just before we do that, let's think about objects…
+On the persistence level, the records are effectively damaged. But on the level of the domain, what is is broken is the subsequent perception of "what happened" previously on the level of the domain: the perception is that something else happened. We can't eliminate infrastructure failure, but we can eliminate misperceptions, so long as we can identify what's actually happening in the processing. Just before we do that, let's think about objects...
 
 ## Actual Entities
 
@@ -113,7 +113,7 @@ Axton Clark in _New York Times Book Review_, January 5 1930, wrote: "Perhaps the
 
 Wieman wrote in his 1930 review: "Not many people will read Whitehead's recent book in this generation; not many will read it in any generation. But its influence will radiate through concentric circles of popularization until the common man will think and work in the light of it, not knowing whence the light came. After a few decades of discussion and analysis one will be able to understand it more readily than can now be done."
 
-Whitehead was born in 1861, and died in 1947. It was said, he was a genial sort of person….
+Whitehead was born in 1861, and died in 1947. It was said, he was a genial sort of person....
 
 He was professor of mathematics at Cambridge and later professor of philosophy at Harvard.
 
@@ -144,7 +144,7 @@ So this is what happens when you don't have instants. If time is not a line that
 
 Todo: add video of sun
 
-Whitehead wrote, "The perfect moment is fadeless in the lapse of time. Time has […] lost its character of 'perpetual perishing', it becomes the moving image of eternity."
+Whitehead wrote, "The perfect moment is fadeless in the lapse of time. Time has [...] lost its character of 'perpetual perishing', it becomes the moving image of eternity."
 
 We can picture eternity as a ball, surrounded by the void of the time to come, with the past as layers underneath, and the present distributed around a surface made of evanescent (fading) events, effervescing (bubbling) into the future, making it happen.
 
@@ -162,11 +162,11 @@ In 1987, Kent Beck and Ward Cunningham began experimenting with the idea of appl
 
 Martin Fowler suggested "patterns create a vocabulary about design".
 
-> Patterns have been around for a long time. […] Patterns create a vocabulary about design, which is why naming is such an important issue. — Martin Fowler, 2002
+> Patterns have been around for a long time. [...] Patterns create a vocabulary about design, which is why naming is such an important issue. — Martin Fowler, 2002
 
 Eric Evans described pattern language as, "a form for sharing and standardising design insight".
 
-> A form for sharing and standardising design insight was introduced in the 1970s by a group of architects led by Christopher Alexander. […] The language of patterns is now a mainstream technique for organising software design ideas. — Eric Evans, 2003
+> A form for sharing and standardising design insight was introduced in the 1970s by a group of architects led by Christopher Alexander. [...] The language of patterns is now a mainstream technique for organising software design ideas. — Eric Evans, 2003
 
 In 1979, Alexander published a book called _The Timeless Way of Building_, which functions as a general theory and guide for pattern language in general. Guiding the reader towards what he called the "quality without a name", Alexander writes in his introduction:
 
@@ -205,14 +205,14 @@ To what degree do other software development approaches apprehend that everythin
 * Episodes, pattern language of events
 * XP, pattern language of practices?
 * Scrum, mixture of "scrum events" and less definite things
-* Agile Manifesto, values and principles…?
+* Agile Manifesto, values and principles...?
 * PoEAA and DDD, "event" not in index of either book
 * TCR, smallest possible occasion of software development?
 * Cynefin ("Kih-neh-vihn"), characterised degrees of event? 
 
 And there isn't time to give an assessment of each. But if it's true that the only thing any approach or description can inspire is an event, then perhaps the descriptions that are most definite about describing human process as an event will also have the most impetus?
 
-If we just dwell on Scrum for a moment…
+If we just dwell on Scrum for a moment...
 
 > Prescribed events are used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum. All events are time-boxed events, such that every event has a maximum duration. Once a Sprint begins, its duration is fixed and cannot be shortened or lengthened. The remaining events may end whenever the purpose of the event is achieved, ensuring an appropriate amount of time is spent without allowing waste in the process.
 >
@@ -231,14 +231,14 @@ Let's briefly look at the episode which gave us _Process and Reality_.
 I've arranged this slide following Whitehead's four stages of an event: datum, process, satisfaction, decision.
 
 * Gifford Lectures (1927-28), Process and Reality (1929)
-* datum includes texts of Plato, Aristotle, Thomas Aquinas, Descartes, Spinoza, Newton, Leibniz, Locke, Berkeley, Hume, Kant, Hegel, Bergson, …
+* datum includes texts of Plato, Aristotle, Thomas Aquinas, Descartes, Spinoza, Newton, Leibniz, Locke, Berkeley, Hume, Kant, Hegel, Bergson, ...
 * process includes feelings he shared with the others, excludes feelings he doesn't share, feels forward towards a
  coherent system of ideas, e.g. multiplicity of actual entities, occasions of experience, process, becoming
 * satisfaction coherent system of ideas called "philosophy of organism" with the claim, "the actual world is built
  up of actual occasions"
 * decision in the form of a printed book, _Process and Reality_, a little bit botched in the printing process
 
-First the datum. Whitehead read the Greeks in Greek when he was a boy. We can read in his book Process and Reality that Whitehead found the considerations of the Greeks and the ideas of Plato, Aristotle, Descartes, Kant, Hume, Newton, and so on… a mixed bag: although he found many things he liked, to which as he says he "recurred", he felt there was an overall incoherence, and individually their ideas mistaken in various ways, and in consequence rather laboured. Whitehead wrote: "An endeavour has been made to point out the exact points of agreement and of disagreement."
+First the datum. Whitehead read the Greeks in Greek when he was a boy. We can read in his book Process and Reality that Whitehead found the considerations of the Greeks and the ideas of Plato, Aristotle, Descartes, Kant, Hume, Newton, and so on... a mixed bag: although he found many things he liked, to which as he says he "recurred", he felt there was an overall incoherence, and individually their ideas mistaken in various ways, and in consequence rather laboured. Whitehead wrote: "An endeavour has been made to point out the exact points of agreement and of disagreement."
 
 He appropriates their work, makes his own propositions, reworking things whilst giving lectures until he reaches a satisfaction. Then his book is printed. All his notes and manuscripts were destroyed when he died, on his wishes. So all we've got is this book. That was Whitehead's process.
 
@@ -273,7 +273,7 @@ Then we have occasions of experience, which "perish, but do not change; they are
 
 Whitehead wrote, "I shall use the term 'event' in the more general sense of a nexus of actual occasions, inter-related in some determinate fashion in one extensive quantum. An actual occasion is the limiting type of an event with only one member."
 
-And since he mentions "quantum", I think it's worth mentioning that quantum field theory is an important part of modern physics, it is the field that is quantised and each quantum has a history of state, resulting from events, which are the particles. But I digress…
+And since he mentions "quantum", I think it's worth mentioning that quantum field theory is an important part of modern physics, it is the field that is quantised and each quantum has a history of state, resulting from events, which are the particles. But I digress...
 
 Next, we have Whitehead's notion of a society, which is when the elements of a nexus are united by a "defining characteristic" that is common to all of them, or that they have all "inherited" from one another, or acquired by a common process. Societies are self-sustaining. The real actual things we encounter in the world are all societies. Whitehead also calls them "enduring physical objects". A building is a society, or an enduring physical object; for that matter, so am I myself. "A non-social nexus is what answers to the notion of 'chaos.'" 
 
@@ -289,9 +289,9 @@ A society has "personal order" if there is a serial ordering of its members. Thi
 
 A corpuscular society is made of strands, each with a personal order. This is like a domain model comprised of event sourced aggregates.
 
-There is a theory of extension… which brings us back to grey stones and named persons and so on.
+There is a theory of extension... which brings us back to grey stones and named persons and so on.
 
-There is a theory of living persons… Our subjective feelings are private facts, events that derive from the world. We emerge from the world. As Whitehead said, "We essentially arise out of our bodies which are the stubborn facts of the immediate relevant past. We are also carried on by our immediate past of personal experience; we finish a sentence because we have begun it"
+There is a theory of living persons... Our subjective feelings are private facts, events that derive from the world. We emerge from the world. As Whitehead said, "We essentially arise out of our bodies which are the stubborn facts of the immediate relevant past. We are also carried on by our immediate past of personal experience; we finish a sentence because we have begun it"
 
 So finally we get to my diagram of Whitehead's event.
 
@@ -344,7 +344,7 @@ I don't have any a great new methodology to suggest, but perhaps we could be mor
 
 ![diagram of human process](./images/diagram-human-process.png "Human process")
 
-Here's a diagram of human development as an event. Now I'm really getting out of my area… Something about the how-to genre. Something about informed consent. Something about responsibilities. But I don't really have all the answers, so I'll skip on….
+Here's a diagram of human development as an event. Now I'm really getting out of my area... Something about the how-to genre. Something about informed consent. Something about responsibilities. But I don't really have all the answers, so I'll skip on....
 
 So what happens if we look at a distributed system as a multiplicity of "process events" in which domain events may be generated? Can we be more definite about reliability in a distributed system that processes domain events, by being more definitive about what actually happens in that processing? If we want to make a system that is reliable, what can we actually rely on? Is it possible to define the process events in terms of only things we can actually rely on?
 
@@ -385,7 +385,7 @@ Here's the process event written as a design pattern. I won't read it all out, i
 >
 > Infrastructure may fail at any time. Although committed database transactions are expected to be durable, the operating system processes, the network, and the databases may go down at any time. Depending on the system design, application state may be adversely affected by infrastructure failures.
 >
-> _Therefore…_
+> _Therefore..._
 > 
 > Use counting to sequence the domain events of an application. Use a unique constraint to make sure only one domain event is recorded for each position. Ensure there are no gaps by calculating the next position from the last recorded position. Also use counting to follow the domain events of an upstream application. Use a tracking record to store the current position in the upstream sequence. Use a unique constraint to make sure tracking can be recorded for each upstream domain event only once.
 >
@@ -400,7 +400,7 @@ This really helps to keep focus on the domain driven design when developing a di
 * Factoring out the "process event" functionality allows an entire system of applications to be defined independently
  of infrastructure (not just domain model)
 * Infrastructure involved only when system is run
-* Runners for single-threaded development and testing, multithreading, multiprocessing, clocked stepping, actors…
+* Runners for single-threaded development and testing, multithreading, multiprocessing, clocked stepping, actors...
 * More time available for domain driven design! :)
 
 I thought I should mention, there is working code for all of this in a project on GitHub, my library for event sourcing in Python. I don't know how many people here use Python? In DDD terms, this is a "cohesive mechanism". Eric Evans wrote,
@@ -409,7 +409,7 @@ I thought I should mention, there is working code for all of this in a project o
 
 ## Conclusion
 
-To round off… As the dictionary said, we can use events to describe everything that happens in a domain. And now we know what an event actually is, we can see that every domain can be exhaustively described with events.
+To round off... As the dictionary said, we can use events to describe everything that happens in a domain. And now we know what an event actually is, we can see that every domain can be exhaustively described with events.
 
 My hope is that, as you start see everything as an event, you feel more real and more alive, and so can operate with more definiteness than before. As Whitehead said, "there's no going behind the events to find something more real."
 
