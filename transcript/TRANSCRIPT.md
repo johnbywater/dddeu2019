@@ -246,7 +246,7 @@ He appropriates their work, makes his own propositions, reworking things whilst 
 
 The satisfaction is the coherent system of ideas called "philosophy of organism", which contains the claim that "the actual world is built up of actual occasions".
 
-The decision comes in the form of a printed book, Process and Reality, which apparently was a little bit botched in the printing process. Partly because Whitehead didn't seem to enjoy copy editing very much, and also because one of his publishers thought his manuscript needed explaining a bit more, so changed a few things. That's why a "corrected" edition was published in 1979.
+The decision comes in the form of a printed book, _Process and Reality_, which apparently was a little bit botched in the printing process. Partly because Whitehead didn't seem to enjoy copy editing very much, and also because one of his publishers thought his manuscript needed explaining a bit more, so changed a few things. That's why a "corrected" edition was published in 1979.
 
 Now, let's look at the scheme of ideas itself. Whitehead called the system of ideas in his book Process and Reality, the "philosophy of organism". Philosophy of organism is the doctrine that the creative advance of the world is the becoming, the perishing, and the objective immortalities of those things which jointly constitute stubborn fact.
 
