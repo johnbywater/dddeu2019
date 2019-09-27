@@ -17,6 +17,12 @@ Now let's say we run a software application that has a domain model in a layered
 
 If we don’t code explicitly for events — for “what happened” — then we can’t expect afterwards directly to determine exactly what changed in the model. That means any notification messages about the change must be published when the database is updated. In this case, sending the notification message is separate from updating the database. So a message could be sent about something that wasn’t recorded in the database, or something could be recorded in the database without a message being sent. In consequence, infrastructure failures can affect the state of a distributed system which propagates state in this way.
 
+![commit after](./images/commit-after.png "commit after")
+
+![publish after](./images/publish-after.png "publish after")
+
+> CRUD is the wrong approach for microservices. — James Roper, 2017
+
 On the persistence level, the records are effectively damaged. But on the level of the domain, what is is broken is the subsequent perception of “what happened” previously on the level of the domain: the perception is that something else happened. We can’t eliminate infrastructure failure, but we can eliminate misperceptions, so long as we can identify what’s actually happening in the processing. Just before we do that, let’s think about objects…
 
 Here’s Martin Fowler in 2002, in his book Patterns of Enterprise Application Architecture, which I really loved.
@@ -54,7 +60,6 @@ The trouble with objects seems to be, what Alfred North Whitehead called “the 
 But of course, now, after so many event sourcing presentations that have included this picture, whereas the Greeks looked at stone and perceived that it was grey, we look at this stone and perceive event-sourcing.
 
 ![ledger](./images/ledger-papyrus.png "ledger")
-
 
 Just to give a quick introduction for those who haven’t heard about it before, event sourcing is an architectural pattern in which the state of the application is determined by a sequence of events. Event sourcing can be used as a persistence mechanism for Domain Driven Design.
 
