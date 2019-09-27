@@ -109,7 +109,7 @@ In 1929, aged 68 years old, Alfred North Whitehead published a book called Proce
 
 As far as I can tell, there were eight contemporary book reviews of the 1929 edition.
 
-Axton Clark in _New York Times Book Review_, January 5 1930, wrote: "Perhaps the situation can best be made clear by saying bluntly that [this work surpasses] Aristotle's "Metaphysics" and Kant's "Critique of Pure Reason" for intrinsic importance, though naturally not as yet for historical standing or influence."
+Axton Clark in _New York Times Book Review_, January 5 1930, wrote: "Perhaps the situation can best be made clear by saying bluntly that [this work surpasses] Aristotle's _Metaphysics_ and Kant's _Critique of Pure Reason_ for intrinsic importance, though naturally not as yet for historical standing or influence."
 
 Wieman wrote in his 1930 review: "Not many people will read Whitehead's recent book in this generation; not many will read it in any generation. But its influence will radiate through concentric circles of popularization until the common man will think and work in the light of it, not knowing whence the light came. After a few decades of discussion and analysis one will be able to understand it more readily than can now be done."
 
@@ -123,7 +123,7 @@ In his later life, he moved to Harvard and started on his philosophical work.
 
 Alan Turing read Whitehead's _Science and The Modern World_ when Turing was at school.
 
-_Process and Reality_ is his masterpiece. Allegedly, we have the word "creativity" in the English language because of this book.
+_Process and Reality_ is his masterpiece. We have the word "creativity" in the English language because of this book.
 
 We also get the notion of expression e.g. in DNA biology stuff from Whitehead, from his writing about the idea of reality creating reality, rather than nature somehow being created by a supernatural being in a process of creation.
 
