@@ -248,7 +248,7 @@ The satisfaction is the coherent system of ideas called "philosophy of organism"
 
 The decision comes in the form of a printed book, _Process and Reality_, which apparently was a little bit botched in the printing process. Partly because Whitehead didn't seem to enjoy copy editing very much, and also because one of his publishers thought his manuscript needed explaining a bit more, so changed a few things. That's why a "corrected" edition was published in 1979.
 
-Now, let's look at the scheme of ideas itself. Whitehead called the system of ideas in his book Process and Reality, the "philosophy of organism". Philosophy of organism is the doctrine that the creative advance of the world is the becoming, the perishing, and the objective immortalities of those things which jointly constitute stubborn fact.
+Now, let's look at the scheme of ideas itself. Whitehead called the system of ideas in his book _Process and Reality_, the "philosophy of organism". Philosophy of organism is the doctrine that the creative advance of the world is the becoming, the perishing, and the objective immortalities of those things which jointly constitute stubborn fact.
 
 Whitehead writes, "The philosophy of organism is a cell-theory of actuality. Each ultimate unit of fact is a cell-complex, not analysable into components with equivalent completeness of actuality. The cell can be considered genetically and morphologically."
 
