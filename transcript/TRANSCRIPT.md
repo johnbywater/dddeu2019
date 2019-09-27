@@ -19,9 +19,9 @@ If we don’t code explicitly for events — for “what happened” — then we
 
 ![commit after](./images/commit-after.png "commit after")
 
-![publish after](./images/publish-after.png "publish after")
-
 > CRUD is the wrong approach for microservices. — James Roper, 2017
+
+![publish after](./images/publish-after.png "publish after")
 
 On the persistence level, the records are effectively damaged. But on the level of the domain, what is is broken is the subsequent perception of “what happened” previously on the level of the domain: the perception is that something else happened. We can’t eliminate infrastructure failure, but we can eliminate misperceptions, so long as we can identify what’s actually happening in the processing. Just before we do that, let’s think about objects…
 
@@ -165,6 +165,8 @@ In Process and Reality, amongst other things, Whitehead rejects the Cartesian id
 > ‘Actual entities’ — also termed ‘actual occasions’ — are the final real things of which the world is made up. There is no going behind actual entities to find anything more real. They differ among themselves: God is an actual entity, and so is the most trivial puff of existence in far-off empty space. But, though there are gradations of importance, and diversities of function, yet in the principles which actuality exemplifies, all are on the same level. The final facts are, all alike, actual entities; and these actual entities are drops of experience, complex and interdependent.
 
 So this is what happens when you don’t have instants. If time is not a line that we’re sliding along, with the moment being a point on that line, infinitely divided into an infinity of infinitesimal present moment points in time.
+
+Todo: add video of sun
 
 Whitehead wrote, “The perfect moment is fadeless in the lapse of time. Time has […] lost its character of ‘perpetual perishing’, it becomes the moving image of eternity”.
 
@@ -311,7 +313,7 @@ There is a theory of living persons… Our subjective feelings are private facts
 
 So finally we get to my diagram of Whitehead’s event.
 
-Todo: Insert diagram of an event
+![the event](./images/diagram-the-event.png "the event")
 
 You can see the four stages.
 
@@ -342,13 +344,13 @@ You can use the diagram to model anything by turning the different bits of text 
 
 So what does Domain Driven Design look like as an event?
 
-Todo: Insert diagram of DDD as an event
+![diagram of DDD](./images/diagram-ddd.png "DDD")
 
 We point the way to the core domain with a domain vision statement. The domain vision statement functions as a subjective aim. The core domain of the software application is perhaps the final reality. We learn from the inside covers of the blue book that names from the bounded context and the core domain enter the ubiquitous language. Modelling out loud gives us an opportunity to feel how coherent the ubiquitous language is. This provides the possibilities for a more coherent unity. And so by using the building blocks and through a process of evolving order, we find satisfaction with a subtle design. The concrete result is a model-driven design. Perhaps if that doesn’t characterise the situation, it includes some of the main points?
 
 What is a software development event?
 
-Todo: Insert diagram of software development
+![diagram of software development](./images/diagram-software-development.png "Software development")
 
 This diagram works for both adding and refactoring. Refactoring is an event, and so is adding. The difference is that refactoring makes a coherent unity from something that was troubling within the existing code. What is felt is a code smell. On the other hand, adding makes a coherent unity from the combination of existing code and the fact of an unsupported requirement.
 
@@ -356,35 +358,35 @@ Perhaps the trouble is the way developers are involved in the software developme
 
 I don’t have any a great new methodology to suggest, but perhaps we could be more definite that software development is an event. And perhaps it would help to be more definite about the human development events within software development. I don’t really know what that means, but now we know we are looking at events, and looking for patterns in events, rather than looking at patterns, perhaps we can find some new things to say about this.
 
-Todo: Insert diagram of human process
+![diagram of human process](./images/diagram-human-process.png "Human process")
 
 Here’s a diagram of human development as an event. Now I’m really getting out of my area… Something about the how-to genre. Something about informed consent. Something about responsibilities. But I don’t really have all the answers, so I’ll skip on….
 
 So what happens if we look at a distributed system as a multiplicity of “process events” in which domain events may be generated? Can we be more definite about reliability in a distributed system that processes domain events, by being more definitive about what actually happens in that processing? If we want to make a system that is reliable, what can we actually rely on? Is it possible to define the process events in terms of only things we can actually rely on?
 
-Todo: Insert diagram of domain event
+![diagram of domain event](./images/diagram-domain-event.png "Domain event")
 
 Let’s firstly pick out the domain model events. There’s an operation call, perhaps a command is executed. Let’s say an aggregate method is executed, and some domain events are produced. The stubborn facts are made when the domain events are written into a database.
 
 So let’s say we process a command, and send notifications of the domain events over a message bus. This is unreliable for the reasons explained before: if the domain events are written first, then the notification might not be sent, and if the notification is sent first, then the domain events might not be written. Even if the domain events are written atomically, and the view updated atomically, it remains that the notification isn’t atomic with the domain events, and the consumption of the notification isn’t atomic with the updating of the view. So there’s lots of ways in which it can go wrong.
 
-Todo: Insert diagram of unreliable propagation
+![diagram of unreliable propagation](./images/diagram-unreliable-propagation.png "Unreliable propagation")
 
 However, if the notifications and the domain events are written atomically. And if the view is updated atomically with a tracking record that shows which notification was last processed. And if we use counting to sequence and follow the notifications. And if processing is resumed using tracking information, then propagation and projection of the state of the application will be reliable. For details about doing this with notification logs, see the relevant section in the book Implementing Domain Driven Design by Vaughn Vernon. We can take this at least one step further, by replacing the view with an event sourced model.
 
-Todo: Insert diagram of reliable propagation
+![diagram of reliable propagation](./images/diagram-reliable-propagation.png "Reliable propagation")
 
 If we make the view event sourced, then we are basically projecting the state of one application into the state of another application. In this case, we have to put three things in the database atomically: the tracking, the domain events, and the notifications. That more or less defines what a process event is.
 
 Using only counting and local atomic database transactions, so long as the infrastructure allows the process to advance at all, the event processing can advance reliably.
 
-Todo: Insert diagram of reliable processing
+![diagram of reliable processing](./images/diagram-reliable-processing.png "Reliable processing")
 
 The new notifications allow the projected state to be propagated to another application. In this way, such applications can be composed to make a reliable distributed system. Such a system is as reliable as its atomic database transactions.
 
 Here’s that process event, drawn as an event.
 
-Todo: Insert diagram of process event
+![diagram of process event](./images/diagram-process-event.png "Process event")
 
 The “subjective aim” is perhaps to keep up-to-date?
 The “datum” is more or less the domain event notification, the current application state, and the application policy itself.
