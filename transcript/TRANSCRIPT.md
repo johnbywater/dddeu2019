@@ -14,6 +14,8 @@ Firstly, let's see what the dictionary says about events...
 
 > An event is something that happens. You can use events to describe all the things that are happening in a particular situation. — Collins Dictionary
 
+## Events in Software
+
 Let's get started by thinking about events in software. Perhaps it's a file on a computer. But even if it's printed on paper, it's a fact of at least one episode or occasion of software development, the process by which it was created. Hopefully, it's also something that actually runs on a computer.
 
 When a program runs, there are lots of events. A high-level program will be parsed somehow. Something is compiled, byte code or machine code. Machine code runs. Transistors switch. Electrons move. There are events within events, and events followed by events.
@@ -30,7 +32,7 @@ If we don't code explicitly for events — for "what happened" — then we can't
 
 On the persistence level, the records are effectively damaged. But on the level of the domain, what is is broken is the subsequent perception of "what happened" previously on the level of the domain: the perception is that something else happened. We can't eliminate infrastructure failure, but we can eliminate misperceptions, so long as we can identify what's actually happening in the processing. Just before we do that, let's think about objects...
 
-## Actual Entities
+## "Everything is an Object"
 
 Here's Martin Fowler in 2002, in his book _Patterns of Enterprise Application Architecture_, which I really loved.
 
@@ -43,6 +45,8 @@ So let's see what Eric Evans said about objects in 2003. Here's Eric Evans discu
 > To stop with 'Everything is an object' would be like a carpenter or an architect summing up houses by saying, 'Everything is a room.' [...] There is a need to move beyond 'Everything is an object' to at least the equivalent of distinguishing bolts from springs. — Eric Evans, 2003
 
 Bolts and springs. Are those the actual entities? I used to think so.
+
+## What is an Object?
 
 So what is an object? Here are three definitions.  
 
@@ -62,9 +66,11 @@ The trouble with objects seems to be, what Alfred North Whitehead called "the fa
 
 > The current accounts of perception are the stronghold of modern meta-physical difficulties. They have their origin in the same misunderstanding which led to the incubus of the substance-quality categories. The Greeks looked at a stone, and perceived that it was grey. — Alfred North Whitehead, 1929
 
+![ledger](./images/ledger-papyrus.png "ledger")
+
 But of course, now, after so many event sourcing presentations that have included this picture, whereas the Greeks looked at stone and perceived that it was grey, we look at this stone and perceive event-sourcing.
 
-![ledger](./images/ledger-papyrus.png "ledger")
+## Event Sourcing
 
 Just to give a quick introduction for those who haven't heard about it before, event sourcing is an architectural pattern in which the state of the application is determined by a sequence of events. Event sourcing can be used as a persistence mechanism for Domain Driven Design.
 
@@ -101,7 +107,7 @@ For Heraclitus, "everything flows". But for modern philosophy, such absolute bec
 
 It happens that the Biblical phrase "come to pass" works well, since events don't change, they just become and then perish.
 
-## Alfred North Whitehead
+## Process and Reality
 
 In 1929, aged 68 years old, Alfred North Whitehead published a book called Process and Reality.
 
@@ -119,15 +125,13 @@ He was professor of mathematics at Cambridge and later professor of philosophy a
 
 _Principia Mathematica_ (1910–1913) is Whitehead's most famous mathematical work. Co-written with former student Bertrand Russell, _Principia Mathematica_ is considered one of the twentieth century's most important works in mathematics, and placed 23rd in a list of the top 100 English-language nonfiction books of the twentieth century. So he his already quite famous because of that.
 
-In his later life, he moved to Harvard and started on his philosophical work.
+In his later life, he moved to Harvard and started on his philosophical work, of which _Process and Reality_ is his masterpiece. Alan Turing read Whitehead when Turing was at school.
 
-Alan Turing read Whitehead's _Science and The Modern World_ when Turing was at school.
-
-_Process and Reality_ is his masterpiece. We have the word "creativity" in the English language because of this book.
+We have the word "creativity" in the English language because of this book.
 
 We also get the notion of expression e.g. in DNA biology stuff from Whitehead, from his writing about the idea of reality creating reality, rather than nature somehow being created by a supernatural being in a process of creation.
 
-In biology, Conrad Waddington had a strong interest in Whitehead's Process and Reality, and in the 1930s laid the
+In biology, Conrad Waddington had a strong interest in Whitehead's _Process and Reality_, and in the 1930s laid the
  foundations for developmental biology, which is the study of the process by which animals and plants grow and
   develop. Brian Goodwin was one of Waddington's students, and continued this work, writing about how cells control themselves.
 
@@ -168,6 +172,8 @@ Eric Evans described pattern language as, "a form for sharing and standardising 
 
 > A form for sharing and standardising design insight was introduced in the 1970s by a group of architects led by Christopher Alexander. [...] The language of patterns is now a mainstream technique for organising software design ideas. — Eric Evans, 2003
 
+## The Timeless Way
+
 In 1979, Alexander published a book called _The Timeless Way of Building_, which functions as a general theory and guide for pattern language in general. Guiding the reader towards what he called the "quality without a name", Alexander writes in his introduction:
 
 > When a building has this fire, then it becomes a part of nature. Like ocean waves, or blades of grass, its parts are governed by the endless play of repetition and variety created in the presence of the fact that all things pass. This is the quality itself. — Christopher Alexander, 1979
@@ -179,6 +185,8 @@ Like Whitehead, Alexander describes "becoming coherent" within "things that pass
 And by real he means things that pass (events).
 
 There is the becoming a part of nature, and also becoming receptive to what is real. The same two aspects, of physicality and mentality, have led others to create a split theory of reality: for example Descartes' mind-body duality: one theory of reality for mind and another for body. Whitehead avoids that by making each event have both to some degree, he calls them the physical and the mental poles. But the main point here is that Alexander is obviously trying to say the actual entities are occasions of experience.
+
+## The Alexandrian Form
 
 A pattern language is a collection of individual pattern descriptions. Each pattern description follows a standard form, call the Alexandrian form, after Christopher Alexander.
 
@@ -194,6 +202,8 @@ I've marked the different parts of the Alexandrian form with the four different 
 
 What I'm saying is that patterns describe events, and when considering the appropriate form of description for your next pattern language, it seems to me that you can safely stray from the Alexandrian form if you want to, so long as you don't stray from Whitehead's form and make sure to address the four stages: datum, process, satisfaction, and decision. Which is what Alexander seems to have done.
 
+## Episodes
+
 Ward Cunningham authored a number of pattern languages, for example EPISODES published in 1995.
 
 EPISODES describes a method of software development. In this pattern language, everything is an event. The really remarkable fact about this text, the reason I included it in this talk, is the close resemblance to what Whitehead said about events. In particular, the four stages of an event, and the notion of becoming, are quite visible here.
@@ -202,7 +212,7 @@ EPISODES describes a method of software development. In this pattern language, e
 
 To what degree do other software development approaches apprehend that everything is an event? I'm not saying nothing can work unless propositions are expressed in terms of events.
 
-* Episodes, pattern language of events
+* EPISODES, pattern language of events
 * XP, pattern language of practices?
 * Scrum, mixture of "scrum events" and less definite things
 * Agile Manifesto, values and principles...?
@@ -224,7 +234,7 @@ I think it's interesting that Scrum defines "Scrum Events". Each event is associ
  
 So let's see what else there is to know about Whitehead's theory of events.
 
-## Process and Reality
+## Whitehead's Episode
 
 Let's briefly look at the episode which gave us _Process and Reality_.
 
@@ -248,7 +258,9 @@ The satisfaction is the coherent system of ideas called "philosophy of organism"
 
 The decision comes in the form of a printed book, _Process and Reality_, which apparently was a little bit botched in the printing process. Partly because Whitehead didn't seem to enjoy copy editing very much, and also because one of his publishers thought his manuscript needed explaining a bit more, so changed a few things. That's why a "corrected" edition was published in 1979.
 
-Now, let's look at the scheme of ideas itself. Whitehead called the system of ideas in his book _Process and Reality_, the "philosophy of organism". Philosophy of organism is the doctrine that the creative advance of the world is the becoming, the perishing, and the objective immortalities of those things which jointly constitute stubborn fact.
+## System of Ideas
+
+Now, let's look at the system of ideas itself. Whitehead called the system of ideas in his book _Process and Reality_, the "philosophy of organism". Philosophy of organism is the doctrine that the creative advance of the world is the becoming, the perishing, and the objective immortalities of those things which jointly constitute stubborn fact.
 
 Whitehead writes, "The philosophy of organism is a cell-theory of actuality. Each ultimate unit of fact is a cell-complex, not analysable into components with equivalent completeness of actuality. The cell can be considered genetically and morphologically."
 
@@ -293,6 +305,8 @@ There is a theory of extension... which brings us back to grey stones and named 
 
 There is a theory of living persons... Our subjective feelings are private facts, events that derive from the world. We emerge from the world. As Whitehead said, "We essentially arise out of our bodies which are the stubborn facts of the immediate relevant past. We are also carried on by our immediate past of personal experience; we finish a sentence because we have begun it"
 
+## Actual Occasions
+
 So finally we get to my diagram of Whitehead's event.
 
 ![the event](./images/diagram-the-event.png "the event")
@@ -322,6 +336,7 @@ Whitehead writes: "This conception of an actual entity in the fluent world is li
 
 There's one more thing I wanted to include here: Whitehead's notion of function. Whitehead wrote, "To function is to contribute determination to the actual entities in the nexus of some actual world." As Ward Cunningham wrote in EPISODES, "Programming is the act of deciding now what will happen in the future."
 
+
 ## Examples
 
 You can use the diagram to model anything by turning the different bits of text into questions.
@@ -346,27 +361,31 @@ I don't have any a great new methodology to suggest, but perhaps we could be mor
 
 Here's a diagram of human development as an event. Now I'm really getting out of my area... Something about the how-to genre. Something about informed consent. Something about responsibilities. But I don't really have all the answers, so I'll skip on....
 
+### Distributed Systems
+
 So what happens if we look at a distributed system as a multiplicity of "process events" in which domain events may be generated? Can we be more definite about reliability in a distributed system that processes domain events, by being more definitive about what actually happens in that processing? If we want to make a system that is reliable, what can we actually rely on? Is it possible to define the process events in terms of only things we can actually rely on?
 
-![diagram of domain event](./images/diagram-domain-event.png "Domain event")
-
 Let's firstly pick out the domain model events. There's an operation call, perhaps a command is executed. Let's say an aggregate method is executed, and some domain events are produced. The stubborn facts are made when the domain events are written into a database.
+
+![diagram of domain event](./images/diagram-domain-event.png "Domain event")
 
 So let's say we process a command, and send notifications of the domain events over a message bus. This is unreliable for the reasons explained before: if the domain events are written first, then the notification might not be sent, and if the notification is sent first, then the domain events might not be written. Even if the domain events are written atomically, and the view updated atomically, it remains that the notification isn't atomic with the domain events, and the consumption of the notification isn't atomic with the updating of the view. So there's lots of ways in which it can go wrong.
 
 ![diagram of unreliable propagation](./images/diagram-unreliable-propagation.png "Unreliable propagation")
 
-However, if the notifications and the domain events are written atomically. And if the view is updated atomically with a tracking record that shows which notification was last processed. And if we use counting to sequence and follow the notifications. And if processing is resumed using tracking information, then propagation and projection of the state of the application will be reliable. For details about doing this with notification logs, see the relevant section in the book Implementing Domain Driven Design by Vaughn Vernon. We can take this at least one step further, by replacing the view with an event sourced model.
+However, if the notifications and the domain events are written atomically. And if the view is updated atomically with a tracking record that shows which notification was last processed. And if we use counting to sequence and follow the notifications. And if processing is resumed using tracking information, then propagation and projection of the state of the application will be reliable. For details about doing this with notification logs, see the relevant section in the book Implementing Domain Driven Design by Vaughn Vernon.
 
 ![diagram of reliable propagation](./images/diagram-reliable-propagation.png "Reliable propagation")
 
-If we make the view event sourced, then we are basically projecting the state of one application into the state of another application. In this case, we have to put three things in the database atomically: the tracking, the domain events, and the notifications. That more or less defines what a process event is.
-
-Using only counting and local atomic database transactions, so long as the infrastructure allows the process to advance at all, the event processing can advance reliably.
+We can take this at least one step further, by replacing the view with an event sourced model. If we make the view event sourced, then we are basically projecting the state of one application into the state of another application. In this case, we have to put three things in the database atomically: the tracking, the domain events, and the notifications. That more or less defines what a process event is.
 
 ![diagram of reliable processing](./images/diagram-reliable-processing.png "Reliable processing")
 
+Using only counting and local atomic database transactions, so long as the infrastructure allows the process to advance at all, the event processing can advance reliably.
+
 The new notifications allow the projected state to be propagated to another application. In this way, such applications can be composed to make a reliable distributed system. Such a system is as reliable as its atomic database transactions.
+
+## Process Event
 
 Here's that process event, drawn as an event.
 
@@ -403,7 +422,7 @@ This really helps to keep focus on the domain driven design when developing a di
 * Runners for single-threaded development and testing, multithreading, multiprocessing, clocked stepping, actors...
 * More time available for domain driven design! :)
 
-I thought I should mention, there is working code for all of this in a project on GitHub, my library for event sourcing in Python. I don't know how many people here use Python? In DDD terms, this is a "cohesive mechanism". Eric Evans wrote,
+I thought I should mention, there is working code for all of this in a project on GitHub, my [library for event sourcing in Python](https://github.com/johnbywater/eventsourcing). I don't know how many people here use Python? In DDD terms, this is a "cohesive mechanism". Eric Evans wrote,
 
 > Partition a conceptually COHESIVE MECHANISM into a separate lightweight framework. Particularly watch for formalisms for well-documented categories of algorithms. Expose the capabilities of the framework with an INTENTION-REVEALING INTERFACE. Now the other elements of the domain can focus on expressing the problem ('what'), delegating the intricacies of the solution ('how') to the framework.
 
