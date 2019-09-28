@@ -365,7 +365,7 @@ Here's a diagram of human development as an event.
 
 Now I'm really getting out of my area... Something about the how-to genre. Something about informed consent. Something about responsibilities. But I don't really have all the answers, so I'll skip on....
 
-### Distributed Systems
+## Distributed Systems
 
 So what happens if we look at a distributed system as a multiplicity of "process events" in which domain events may be generated? Can we be more definite about reliability in a distributed system that processes domain events, by being more definitive about what actually happens in that processing? If we want to make a system that is reliable, what can we actually rely on? Is it possible to define the process events in terms of only things we can actually rely on?
 
