@@ -127,6 +127,8 @@ He was professor of mathematics at Cambridge and later professor of philosophy a
 
 _Principia Mathematica_ (1910–1913) is Whitehead's most famous mathematical work. Co-written with former student Bertrand Russell, _Principia Mathematica_ is considered one of the twentieth century's most important works in mathematics, and placed 23rd in a list of the top 100 English-language nonfiction books of the twentieth century. So he his already quite famous because of that.
 
+It was Kurt Gödel's encounter's with Whitehead and Russell's work when Gödel declared that "counting works" (if there's a difference between the theory and counting, then we know the theory is wrong because counting works).
+
 In his later life, he moved to Harvard and started on his philosophical work, of which _Process and Reality_ is his masterpiece. Alan Turing read Whitehead when Turing was at school.
 
 We have the word "creativity" in the English language because of this book.
@@ -136,8 +138,6 @@ We also get the notion of expression e.g. in DNA biology stuff from Whitehead, f
 In biology, Conrad Waddington had a strong interest in Whitehead's _Process and Reality_, and in the 1930s laid the
  foundations for developmental biology, which is the study of the process by which animals and plants grow and
   develop. Brian Goodwin was one of Waddington's students, and continued this work, writing about how cells control themselves.
-
-It was Kurt Gödel's encounter's with Whitehead and Russell's work when Gödel declared that "counting works" (if there's a difference between the theory and counting, then we know the theory is wrong because counting works).
 
 Whitehead's book _Process and Reality_ appears as a thoroughly competent reworking of the major "depositions" in the history of philosophy: to isolate things that work; and to compose those fragments into a coherent scheme of ideas.
 
