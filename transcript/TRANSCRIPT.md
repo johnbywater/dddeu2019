@@ -68,9 +68,9 @@ The trouble with objects seems to be, what Alfred North Whitehead called "the fa
 
 > The current accounts of perception are the stronghold of modern meta-physical difficulties. They have their origin in the same misunderstanding which led to the incubus of the substance-quality categories. The Greeks looked at a stone, and perceived that it was grey. — Alfred North Whitehead, 1929
 
-![ledger](./images/ledger-papyrus.png "ledger")
-
 But of course, now, after so many event sourcing presentations that have included this picture, whereas the Greeks looked at stone and perceived that it was grey, we look at this stone and perceive event-sourcing.
+
+![ledger](./images/ledger-papyrus.png "ledger")
 
 ## Event Sourcing
 
