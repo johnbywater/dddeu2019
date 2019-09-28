@@ -202,7 +202,7 @@ I've marked the different parts of the Alexandrian form with the four different 
 
 What I'm saying is that patterns describe events, and when considering the appropriate form of description for your next pattern language, it seems to me that you can safely stray from the Alexandrian form if you want to, so long as you don't stray from Whitehead's form and make sure to address the four stages: datum, process, satisfaction, and decision. Which is what Alexander seems to have done.
 
-## Episodes
+## Software Development
 
 Ward Cunningham authored a number of pattern languages, for example EPISODES published in 1995.
 
