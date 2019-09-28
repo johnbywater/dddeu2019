@@ -129,7 +129,7 @@ _Principia Mathematica_ (1910–1913) is Whitehead's most famous mathematical wo
 
 It was Kurt Gödel's encounter's with Whitehead and Russell's work when Gödel declared that "counting works" (if there's a difference between the theory and counting, then we know the theory is wrong because counting works).
 
-In his later life, he moved to Harvard and started on his philosophical work, of which _Process and Reality_ is his masterpiece. Alan Turing read Whitehead when Turing was at school.
+In his later life, Whitehead moved to Harvard and started on his philosophical work, of which _Process and Reality_ is his masterpiece. Alan Turing read Whitehead when Turing was at school.
 
 We have the word "creativity" in the English language because of this book.
 
