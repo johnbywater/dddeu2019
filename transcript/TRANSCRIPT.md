@@ -1,6 +1,9 @@
 _This is the transcript of a talk given at DDD Europe conference in Amsterdam, January 2019._
 
+_6770 words_
+
 _[The video of the talk is available on YouTube.](https://www.youtube.com/watch?v=EX_zRTeowuM)_
+
 
 # Events in Software, Process, and Reality
 
