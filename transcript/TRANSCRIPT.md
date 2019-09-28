@@ -437,5 +437,3 @@ My hope is that, as you start see everything as an event, you feel more real and
 In other words, we exclude nothing by tackling complexity in a domain by its events. I think that's a useful thing to know.
 
 That's all I got. Thanks for listening.
-
-END 
