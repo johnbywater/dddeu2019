@@ -377,7 +377,7 @@ So let's say we process a command, and send notifications of the domain events o
 
 ![diagram of unreliable propagation](./images/diagram-unreliable-propagation.png "Unreliable propagation")
 
-However, if the notifications and the domain events are written atomically. And if the view is updated atomically with a tracking record that shows which notification was last processed. And if we use counting to sequence and follow the notifications. And if processing is resumed using tracking information, then propagation and projection of the state of the application will be reliable. For details about doing this with notification logs, see the relevant section in the book Implementing Domain Driven Design by Vaughn Vernon.
+However, if the notifications and the domain events are written atomically. And if the view is updated atomically with a tracking record that shows which notification was last processed. And if we use counting to sequence and follow the notifications. And if processing is resumed using tracking information, then propagation and projection of the state of the application will be reliable. For details about doing this with notification logs, see the relevant section in the book _Implementing Domain Driven Design_ by Vaughn Vernon.
 
 ![diagram of reliable propagation](./images/diagram-reliable-propagation.png "Reliable propagation")
 
