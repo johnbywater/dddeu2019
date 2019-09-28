@@ -144,6 +144,8 @@ In _Process and Reality_, amongst other things, Whitehead rejects the Cartesian 
 
 > 'Actual entities' — also termed 'actual occasions' — are the final real things of which the world is made up. There is no going behind actual entities to find anything more real. They differ among themselves: God is an actual entity, and so is the most trivial puff of existence in far-off empty space. But, though there are gradations of importance, and diversities of function, yet in the principles which actuality exemplifies, all are on the same level. The final facts are, all alike, actual entities; and these actual entities are drops of experience, complex and interdependent. — Alfred North Whitehead, 1929
 
+## Moving Image of Eternity
+
 So this is what happens when you don't have instants. If time is not a line that we're sliding along, with the moment being a point on that line, infinitely divided into an infinity of infinitesimal present moment points in time.
 
 Todo: add video of sun
