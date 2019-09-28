@@ -135,9 +135,7 @@ We have the word "creativity" in the English language because of this book.
 
 We also get the notion of expression e.g. in DNA biology stuff from Whitehead, from his writing about the idea of reality creating reality, rather than nature somehow being created by a supernatural being in a process of creation.
 
-In biology, Conrad Waddington had a strong interest in Whitehead's _Process and Reality_, and in the 1930s laid the
- foundations for developmental biology, which is the study of the process by which animals and plants grow and
-  develop. Brian Goodwin was one of Waddington's students, and continued this work, writing about how cells control themselves.
+In biology, Conrad Waddington had a strong interest in Whitehead's _Process and Reality_, and in the 1930s laid the foundations for developmental biology, which is the study of the process by which animals and plants grow and develop. Brian Goodwin was one of Waddington's students, and continued this work, writing about how cells control themselves.
 
 Whitehead's book _Process and Reality_ appears as a thoroughly competent reworking of the major "depositions" in the history of philosophy: to isolate things that work; and to compose those fragments into a coherent scheme of ideas.
 
