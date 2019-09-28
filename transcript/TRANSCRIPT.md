@@ -357,9 +357,11 @@ Perhaps the trouble is the way developers are involved in the software developme
 
 I don't have any a great new methodology to suggest, but perhaps we could be more definite that software development is an event. And perhaps it would help to be more definite about the human development events within software development. I don't really know what that means, but now we know we are looking at events, and looking for patterns in events, rather than looking at patterns, perhaps we can find some new things to say about this.
 
+Here's a diagram of human development as an event. 
+
 ![diagram of human process](./images/diagram-human-process.png "Human process")
 
-Here's a diagram of human development as an event. Now I'm really getting out of my area... Something about the how-to genre. Something about informed consent. Something about responsibilities. But I don't really have all the answers, so I'll skip on....
+Now I'm really getting out of my area... Something about the how-to genre. Something about informed consent. Something about responsibilities. But I don't really have all the answers, so I'll skip on....
 
 ### Distributed Systems
 
@@ -426,7 +428,7 @@ I thought I should mention, there is working code for all of this in a project o
 
 > Partition a conceptually COHESIVE MECHANISM into a separate lightweight framework. Particularly watch for formalisms for well-documented categories of algorithms. Expose the capabilities of the framework with an INTENTION-REVEALING INTERFACE. Now the other elements of the domain can focus on expressing the problem ('what'), delegating the intricacies of the solution ('how') to the framework.
 
-## Conclusion
+## The End
 
 To round off... As the dictionary said, we can use events to describe everything that happens in a domain. And now we know what an event actually is, we can see that every domain can be exhaustively described with events.
 
