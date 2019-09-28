@@ -148,11 +148,11 @@ In _Process and Reality_, amongst other things, Whitehead rejects the Cartesian 
 
 So this is what happens when you don't have instants. If time is not a line that we're sliding along, with the moment being a point on that line, infinitely divided into an infinity of infinitesimal present moment points in time.
 
-Todo: add video of sun
-
 Whitehead wrote, "The perfect moment is fadeless in the lapse of time. Time has [...] lost its character of 'perpetual perishing', it becomes the moving image of eternity."
 
 We can picture eternity as a ball, surrounded by the void of the time to come, with the past as layers underneath, and the present distributed around a surface made of evanescent (fading) events, effervescing (bubbling) into the future, making it happen.
+
+![the sun](images/the-sun.png "the Sun")
 
 Let's remember this fire, and look again at some of what Christopher Alexander had to say, to see how Alexander's work was illuminated by Whitehead's work, so that we can see how Whitehead has illuminated our work.
 
@@ -367,7 +367,9 @@ Now I'm really getting out of my area... Something about the how-to genre. Somet
 
 ## Distributed Systems
 
-So what happens if we look at a distributed system as a multiplicity of "process events" in which domain events may be generated? Can we be more definite about reliability in a distributed system that processes domain events, by being more definitive about what actually happens in that processing? If we want to make a system that is reliable, what can we actually rely on? Is it possible to define the process events in terms of only things we can actually rely on?
+So what happens if we look at a distributed system as a multiplicity of "process events" in which domain events may be generated? Can we be more definite about reliability in a distributed system that processes domain events, by being more definitive about what actually happens in that processing?
+
+If we want to make a system that is reliable, what can we actually rely on? Let's say counting, and ACID database transactions are 100% reliable. Is it possible to define the process events in terms of only the things we can actually rely on?
 
 Let's firstly pick out the domain model events. There's an operation call, perhaps a command is executed. Let's say an aggregate method is executed, and some domain events are produced. The stubborn facts are made when the domain events are written into a database.
 
