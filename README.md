@@ -4,4 +4,6 @@
 
 Watch [the talk](https://www.youtube.com/watch?v=EX_zRTeowuM)
 
-Read [the slides](https://johnbywater.github.io/dddeu2019/)
+See [the slides](https://johnbywater.github.io/dddeu2019/)
+
+Read [the transcript](https://github.com/johnbywater/dddeu2019/blob/master/transcript/TRANSCRIPT.md)
